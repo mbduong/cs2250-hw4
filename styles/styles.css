@@ -1,0 +1,73 @@
+* {
+  font-family: Optima, sans-serif;
+}
+#MyTitle h1 {
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  display: flex;
+}
+.set {
+  border: thick double #1a7333;
+  height: 300px;
+  flex: 25%;
+  max-width: 25%;
+  margin: 5px;
+  padding: 1em;
+}
+#Adiv {
+  background-color: #c7f0b9;
+  order: -1;
+}
+#Bdiv {
+  background-color: #aae496;
+  order: 0;
+}
+#Cdiv {
+  background-color: #8cdc72;
+  order: -1;
+}
+#Ddiv {
+  background-color: #68b54c;
+  order: 1;
+}
+ul {
+  width: 70%;
+}
+li {
+  font-size: 20px;
+  background-color: #ffffff57;
+  border: 2px groove #1a73337d;
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  height: 30px;
+  transition: 0.4s;
+}
+li:hover {
+  background-color: white;
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+/* rip I can't get it to work sorry*/
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .set { 
+    flex: 50%;
+    max-width: 50%;
+  }
+  #Cdiv {
+    order: 1;
+  }
+}
+@media screen and (max-width: 480px) {
+  .set { 
+    flex: 100%;
+    max-width: 100%;
+  }
+}
